@@ -1,0 +1,28 @@
+<md-content layout="column" style="background-color:#e3e3e3;">
+
+  <div class="hero-container" layout="column" layout-align="center center">
+    <span flex></span>
+    <h1 class="large">fireblog</h1>
+    <h3>LAUNCH! Annapolis</h3>
+    <div class="social-buttons" layout="row">
+      <md-button href="https://github.com/sbolel/launch-annapolis" target="_blank" class="md-fab" aria-label="Github">
+          <md-tooltip>sbolel/launch-annapolis</md-tooltip>
+          <md-icon md-font-icon="ion-social-github"></md-icon>
+      </md-button>
+    </div>
+    <span flex></span>
+    <i class="ion-ios-arrow-down"></i>
+  </div>
+
+  <div layout="column" style="margin: auto auto;">
+    <div ng-repeat="entry in $content.blogEntries track by item.timestamp">
+        <blog-entry entry="entry"></team-member>
+    </div>
+  </div>
+
+  <div class="form-container cover pt20 pb50" layout="column" layout-padding layout-align="center center" flex>
+    <h1 class="large mt20 mb0 center">get in touch</h1>
+    <div contact-form style="width:100%"></div>
+  </div>
+
+</md-content>

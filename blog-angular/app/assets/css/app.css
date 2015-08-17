@@ -1,0 +1,217 @@
+/* Content */
+
+html, body, ui-view  {
+    margin: 0;
+    height: auto;
+    min-height: 100%;
+}
+
+#content-view {
+  height: auto;
+  background-color: white; 
+}
+
+/* Typography */
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, table, blockquote, input, select, textarea {
+  margin-bottom: 24px;
+  margin-top: 0;
+  padding: 0;
+  font-weight: 200;
+}
+
+h1.large {
+  font-size: 4em;
+  line-height: 80px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+p.lead {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Containers */
+
+.container {
+  max-width: 940px;
+  margin: auto;
+}
+
+.hero-container {
+  margin: 0;
+  padding: 0;  
+  height: 95vh;
+  text-align: center;
+  background-color: #673AB7;
+  color: white;
+}
+
+.hero-container > i.ion-ios-arrow-down {
+  color: #B39DDB;
+  font-size: 3em;
+}
+
+.hero-container > .social-buttons {
+  margin-top: 20px;
+}
+
+.hero-container > .social-buttons > a.md-button > md-icon {
+  font-size: 2em;
+  margin-top: -4px;
+}
+
+.content-container {
+  background-color: white;
+}
+
+.content-container > h1 {
+  text-align: center;
+  margin: auto 40px;
+}
+
+.form-container {
+  background-color: #EDE7F6;
+  color: black;
+}
+
+/* Sizing */
+
+.cover {
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen {
+  height: 95vh;
+}
+
+.dark {
+  background-color: #616161;
+}
+
+/* Mods */
+
+.pointer {
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+/* Material Design Elements */
+
+md-card.background {
+  background-color: #333;
+  color: white;
+}
+
+.md-input {
+  margin-bottom: 0;
+}
+
+.md-icon-button i {
+  font-size: 1.5em;
+}
+
+.toolbar-button {
+  position: relative;
+}
+
+.toolbar-button .button-glyph {
+  padding-bottom: 0.125em;
+}
+
+.toolbar-button .button-scale span {
+  font-size: 0.5em;
+  position: absolute;
+  width: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.img-item {
+  height: 160px;
+  width: 160px;
+  padding-bottom: 20px;
+}
+
+.img-item > img {
+  height: 160px;
+  width: 160px;
+}
+
+/* Spacing */
+
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+.mb60 {margin-bottom: 60px;}
+
+.pb20 {padding-bottom: 20px;}
+.pb30 {padding-bottom: 30px;}
+.pb40 {padding-bottom: 40px;}
+.pb50 {padding-bottom: 50px;}
+
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt40 {margin-top: 40px;}
+.mt50 {margin-top: 50px;}
+.mt60 {margin-top: 60px;}
+
+.pt20 {padding-top: 20px;}
+.pt30 {padding-top: 30px;}
+.pt40 {padding-top: 40px;}
+.pt50 {padding-top: 50px;}
+
+.pr10 {padding-right: 10px;}
+.pr20 {padding-right: 20px;}
+.pr30 {padding-right: 30px;}
+.pr40 {padding-right: 40px;}
+.pr50 {padding-right: 50px;}
+
+.pl10 {padding-left: 10px;}
+.pl20 {padding-left: 20px;}
+.pl30 {padding-left: 30px;}
+.pl40 {padding-left: 40px;}
+.pl50 {padding-left: 50px;}
+
+
+/* Media Queries */
+/*
+  layout-sm     600px > width           (phones).
+  layout-gt-sm  600px < width           (bigger than phones).
+  layout-md     600px < width < 960px   (tablets in portrait).
+  layout-gt-md  960px < width           (bigger than tablets in portrait).
+  layout-lg     960px < width < 1200px  (tablets in landscape).
+  layout-gt-lg  1200px < width          (computers and large screens).
+*/

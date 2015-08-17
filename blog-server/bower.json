@@ -1,0 +1,35 @@
+{
+  "name": "blog-server",
+  "private": "true",
+  "version": "0.0.1",
+  "authors": [
+    "Sinan Bolel <sinanbolel@gmail.com>"
+  ],
+  "main": "./app/app.js",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-animate": "~1.4.4",
+    "angular-ui-router": "~0.2.15",
+    "angular-route": "~1.4.0",
+    "ionicons": "~2.0.1",
+    "material-design-icons": "~2.0.0",
+    "angular-trackjs": "~0.1.0",
+    "angular-aria": "~1.4.3",
+    "angular-material": "~0.10.0",
+    "angular-moment": "~0.10.2",
+    "firebase": "~2.2.9",
+    "angularfire": "~1.1.2",
+    "angular-firebase-cms": "../firebase-modules/angular-firebase-cms/",
+    "angular-material-layout": "../angular-modules/angular-material-layout/"
+  }
+}

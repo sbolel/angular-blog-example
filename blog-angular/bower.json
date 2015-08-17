@@ -1,0 +1,42 @@
+{
+  "name": "firebase-blog",
+  "private": "true",
+  "version": "0.0.1",
+  "authors": [
+    "Sinan Bolel <sinanbolel@gmail.com>"
+  ],
+  "description": "Live code!",
+  "homepage": "https://github.com/sbolel/launch-annapolis",
+  "main": "./app/app.js",
+  "keywords": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-animate": "~1.4.4",
+    "angular-material": "~0.10.1",
+    "angular-moment": "~0.10.2",
+    "angular-ui-router": "~0.2.15",
+    "angular-route": "~1.4.4",
+    "firebase": "~2.2.9",
+    "ionicons": "~2.0.1",
+    "moment": "~2.10.6",
+    "angular-trackjs": "~0.1.0",
+    "angular-aria": "~1.4.4",
+    "angularfire": "~1.1.2",
+    "angular-firebase-cms": "git@github.com:sbolel/angular-firebase-cms.git#~0.1.1",
+    "angular-material-layout": "git@github.com:sbolel/angular-material-layout.git#~0.1.1",
+    "underscore": "~1.8.3",
+    "angular-flippy": "*"
+  },
+  "resolutions": {
+    "angular": "~1.4.4",
+    "angular-material": "~0.10.1"
+  }
+}

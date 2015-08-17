@@ -1,0 +1,6 @@
+[submodule "public/modules/--name"]
+	path = public/modules/--name
+	url = git@bitbucket.org:sbolel/angular-module-cms.git
+[submodule "public/modules/cms"]
+	path = public/modules/cms
+	url = git@bitbucket.org:sbolel/angular-module-cms.git

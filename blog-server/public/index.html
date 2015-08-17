@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog Admin</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Sample Blog App">
+    <meta name="author" content="Sinan Bolel <sinanbolel@gmail.com>">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="vendor/ionicons.min.css" />
+    <link rel="stylesheet" href="vendor/angular-material.min.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body ng-app="adminApp">
+    <div id="content-view" ui-view ng-controller="LayoutController"></div>
+    <footer>
+      <!-- bower:js -->
+      <script src="vendor/angular.js"></script>
+      <script src="vendor/angular-animate.js"></script>
+      <script src="vendor/angular-ui-router.js"></script>
+      <script src="vendor/angular-route.js"></script>
+      <script src="vendor/angular-trackjs.min.js"></script>
+      <script src="vendor/angular-aria.js"></script>
+      <script src="vendor/angular-material.js"></script>
+      <script src="vendor/moment.js"></script>
+      <script src="vendor/angular-moment.js"></script>
+      <script src="vendor/firebase.js"></script>
+      <script src="vendor/angularfire.js"></script>
+      <script src="vendor/angular-firebase-cms.min.js"></script>
+      <script src="vendor/angular-material-layout.min.js"></script>
+      <!-- endbower -->
+      <script src="app.js"></script>
+      <script src="app-constants.js"></script>
+      <script src="modules/home/home-module.js"></script>
+      <script src="modules/user/user-module.js"></script>
+      <script src="modules/user/user-factory.js"></script>
+      <script src="modules/user/user-service.js"></script>
+      <script src="modules/admin/admin-module.js"></script>
+      <script src="modules/admin/admin-directives.js"></script>
+    </footer>
+  </body>
+</html>

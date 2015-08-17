@@ -1,0 +1,35 @@
+
+<md-dialog aria-label="New" flex>
+  <form name="newObjectForm">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Create <span ng-bind="newObject.parent"></span></h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="cancel()">
+        <md-icon md-font-icon="ion-close" aria-label="Close dialog"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <div>
+      <md-input-container flex ng-repeat="(key, value) in newObject" ng-if="key!=='key' && key!=='parent' && key!=='content'" ng-cloak>
+        <label>{{::key}}</label>
+        <input ng-model="newObject[key]" type="text" name="title" required>
+      </md-input-container>
+      <md-input-container>
+        <label>Content</label>
+        <textarea ng-model="newObject.content" name="content" required></textarea>
+      </md-input-container>
+    </div>
+  </md-dialog-content>
+  <div class="md-actions" layout="row">
+    <span flex></span>
+    <md-button aria-label="Cancel" type="reset" value="Reset" ng-click="" class="md-warn md-hue-1">
+     Reset
+    </md-button>
+    <md-button aria-label="Submit" type="submit" value="Save" ng-click="answer('submit')" ng-disabled="newObjectForm.$invalid" class="md-primary md-raised">
+      Submit
+    </md-button>
+  </div>
+  </form>
+</md-dialog>

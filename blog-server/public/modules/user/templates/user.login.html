@@ -1,0 +1,33 @@
+<md-content class="md-background" layout="column" layout-fill>
+  <span flex></span>
+  <div layout="row" layout-align="center center">
+    <md-card layout="column" flex="60">
+      <md-toolbar class="md-primary">
+        <div class="md-toolbar-tools">
+          <span>Sign in to continue</span>
+        </div>
+      </md-toolbar>
+      <md-card-content layout="column" layout-align="center center">
+        <md-content layout-fill>
+          <form name="login" flex>
+            <md-input-container flex>
+              <label>Email</label>
+              <input ng-model="incomingUser.email" type="email" name="email" required>
+            </md-input-container>
+            <span flex="5"></span>
+            <md-input-container flex>
+              <label>Password</label>
+              <input ng-model="incomingUser.password" type="password" name="password" required>
+            </md-input-container>
+            <div layout="row">
+              <span flex></span>
+              <md-button type="submit" value="Save" ng-click="loginWithPassword()" ng-disabled="login.$invalid" class="md-accent md-hue-2" aria-label="Login">Login</md-button>
+            </div>
+          </form>
+          <small id="alert-message" class="disabled" layout="row" layout-align="center center" layout-margin ng-model="alert"></small>
+        </md-content>
+      </md-card-content>
+    </md-card>
+  </div>
+  <span flex></span>
+</md-content>

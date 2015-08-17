@@ -1,0 +1,39 @@
+<section layout="row" flex layout-fill id="admin-template">
+
+  <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+    <md-toolbar layout="row" class="md-primary md-hue-2">
+      <md-button aria-label="Close Menu" ng-click="toggleLeft()" hide-gt-md class="md-no-ink md-warn">
+        <i class="md-icon ion-close-round"></i>
+      </md-button>
+      <h1 class="md-toolbar-tools">Admin</h1>
+    </md-toolbar>
+    <md-content layout="column" layout-fill layout-padding ng-controller="LeftCtrl">
+      <md-button aria-label="Dashboard" ui-sref="admin.index" ng-click="close()" class="md-default-theme">
+        <i class="md-icon mr10 ion-home" md-menu-align-target></i>
+        <span>Dashboard</span>
+      </md-button>
+      <md-button aria-label="Content Management" ui-sref="admin.content" ng-click="close()" class="md-default-theme">
+        <i class="md-icon mr10 ion-quote" md-menu-align-target></i>
+        <span>Content Management</span>
+      </md-button>
+    </md-content>
+  </md-sidenav>
+
+  <md-content flex>
+    <md-toolbar layout="row" layout-align="center center">
+      <div class="md-toolbar-tools">
+        <md-button class="md-no-ink" hide-gt-md aria-label="Menu" ng-click="toggleLeft()">
+          <i class="md-icon ion-navicon-round"></i>
+        </md-button>
+        <h1>
+          <span ui-sref="admin.index" class="pointer" hide-gt-md>Admin</span>
+          <i class="ion-chevron-right pl10 pr10" hide-gt-md></i>
+          <span ng-bind="$state.$current.data.title"></span>
+        </h1>
+        <span flex></span>
+      </div>
+    </md-toolbar>
+    <!-- CONTENT UI-VIEW -->
+    <div ui-view="admin-content" layout="column" layout-fill layout-align="top center"></div>
+  </md-content>
+</section>

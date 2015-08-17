@@ -1,0 +1,13 @@
+{
+  "firebase": {
+    "name": "dev-nurha",
+    "url": "https://dev-nurha.firebaseio.com"
+  },
+  "authData": {
+    "auth": null,
+    "expires": null,
+    "token": "",
+    "uid": null,
+    "provider": "custom"
+  }
+}

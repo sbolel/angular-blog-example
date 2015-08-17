@@ -1,0 +1,19 @@
+<section ng-init="init()">
+
+  <md-card layout="column" flex>
+    <md-toolbar layout="row" class="md-primary dark">
+      <div class="md-toolbar-tools" layout>
+        <h1>Blog Entries</h1>
+        <span flex></span>
+        <md-button ng-click="create($event, 'blogEntries')" aria-label="New Entry" class="md-fab md-accent">
+          <md-tooltip md-direction="down">New Entry</md-tooltip>
+          <i class="md-icon ion-plus-round"></i>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-card-content layout="column" layout-align="center center" flex>
+        <div cms-list edit="edit" data="$content.blogEntries"></div>
+    </md-card-content>
+  </md-card>
+
+</section>

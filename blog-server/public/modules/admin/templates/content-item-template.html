@@ -1,0 +1,20 @@
+<md-list-item class="md-3-line">
+  <div class="md-list-item-text">
+    <div class="mb10" layout="row" layout-align="start start">
+      <div layout="column">
+        <h3 style="margin:0 0 10px 0" flex>{{::item.title}}</h3>
+        <h4 style="margin:0"><small>{{::item.dateString}}</small></h4>
+      </div>
+      <span flex></span>
+    </div>
+    <p>{{::item.content }}</p>
+    <md-divider></md-divider>
+    <div class="md-actions" layout="row">
+      <span flex></span>
+      <md-button ng-click="editItem($event)" aria-label="Edit Item" class="md-fab md-mini md-primary md-hue-3">
+        <md-tooltip md-direction="down">Edit</md-tooltip>
+        <i class="md-icon ion-compose"></i>
+      </md-button>
+    </div>
+  </div>
+</md-list-item>
