@@ -7,8 +7,8 @@ var Firebase = require('firebase'),
     Events = require('events'),
     emitter = new Events.EventEmitter(),
     debug = require('debug')('firebase-admin'),
-    _FIREBASE_URL = process.env.RHA_DEV_FIREBASE_URL,
-    _FIREBASE_TOKEN = process.env.RHA_DEV_FB_SECRET,
+    _FIREBASE_URL = process.env.LAUNCH_FIREBASE_URL,
+    _FIREBASE_TOKEN = process.env.LAUNCH_FB_SECRET,
     _FIREBASE_REF = new Firebase(_FIREBASE_URL);
 
 var setup = {
@@ -20,7 +20,7 @@ var setup = {
 function checkAdmin(authData){
   var deferred = Q.defer();
   debug('authData',authData);
-  _FIREBASE_REF.child('app/admin/users').orderByKey().equalTo(authData.uid).once('value', function(snapshot){
+  _FIREBASE_REF.child('config/adminUsers').orderByKey().equalTo(authData.uid).once('value', function(snapshot){
 
     if(snapshot.exists() && snapshot.hasChild(authData.uid)){
       deferred.resolve(true);
