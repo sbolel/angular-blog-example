@@ -38,11 +38,16 @@ adminModule.config(['$stateProvider', function($stateProvider) {
 }]);
 
 adminModule.controller('AdminController', [
-    '$log', '$cmsClient', '$scope', '$state', '$q', '$mdDialog', 'UserService', 
-    function($log, $cmsClient, $scope, $state, $q, $mdDialog, UserService) {
+    '$log', '$cmsClient', '$scope', '$state', '$q', '$mdDialog', 'UserService', '$firebaseObject',
+    function($log, $cmsClient, $scope, $state, $q, $mdDialog, UserService, $firebaseObject) {
 
   $scope.$content = {};
   $scope.$content.focusedData = {};
+
+  var contentRef = new Firebase("https://launch-annapolis.firebaseio.com/content");
+  var syncObject = $firebaseObject(contentRef);
+
+  syncObject.$bindTo($scope, "content");
 
   var auth = UserService.getCurrentAuth();
   
