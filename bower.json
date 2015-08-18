@@ -1,0 +1,19 @@
+{
+  "name": "firebase-blog",
+  "version": "0.0.1",
+  "description": "LAUNCH! Annapolis Example Blog with Firebase",
+  "main": "./app/app.js",
+  "scripts": {
+    "install": "npm --prefix ./blog-angular install ./blog-angular && npm --prefix ./blog-server install ./blog-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sbolel/launch-annapolis.git"
+  },
+  "keywords": [],
+  "author": "sinanbolel <sinanbolel@gmail.com>",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/sbolel/launch-annapolis"
+}
